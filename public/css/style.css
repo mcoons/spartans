@@ -43,9 +43,17 @@ header .navbar-inverse .navbar-brand {
     color: white;
 }
 
+header .navbar-inverse {
+    color: white;
+}
+
 header .navbar-inverse .navbar-nav>li>a {
     color: white;
 } 
+
+.dropdown-menu {
+    color: white;   
+}
 
 header .navbar-inverse .navbar-nav>li>a:hover {
     background-color: rgb(68, 124, 170) ;
