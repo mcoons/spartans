@@ -11,7 +11,11 @@
 
         <p>
         <% for (let p=1; p <= totalPages; p++) { %>
-            <a href="/<%=date%>?page=<%=p%>"><%=p %></a>
+            <% if (p != page) { %>
+                <a href="/<%=date%>?page=<%=p%>"><%=p %></a>
+            <% } else { %>
+                <strong><%=p %></strong>
+            <% } %>
         <% } %>
         </p>     
 
