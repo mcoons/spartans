@@ -27,6 +27,8 @@ router.get('/:date', function (req,res){
     pics = pics.slice(startIndex, endIndex+1); 
 
     res.render('pictures', {
+        logo: '/logo.gif',
+        jumboPic: '/jumbotron.jpg',
         page: page,
         totalPages: totalPages,
         dates: dates,

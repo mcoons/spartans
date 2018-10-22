@@ -4,7 +4,7 @@ header {
     font-size: 2rem;
   }
   
-  header .jumbotron {
+header .jumbotron {
     height: 40vh;
     margin-bottom: 0;
     background: no-repeat 100% 5%;
@@ -12,6 +12,11 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.jumbotron {
+    padding: 20px 0;
+    background-color: rgb(85, 152, 207);
   }
 /**  Navbar **/
 

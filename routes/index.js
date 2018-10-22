@@ -6,6 +6,8 @@ router.get('/', function (req, res){
     var dates = req.app.get('dates');
 
     res.render('index', {
+        logo: '/logo.gif',
+        jumboPic: '/jumbotron.jpg',
         dates: dates,
         pageTitle: 'Home',
         pageID: 'home'
