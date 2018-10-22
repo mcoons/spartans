@@ -1,0 +1,76 @@
+/**  Header Navigation **/
+
+header {
+    font-size: 2rem;
+  }
+  
+  header .jumbotron {
+    height: 40vh;
+    margin-bottom: 0;
+    background: no-repeat 100% 5%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+/**  Navbar **/
+
+header .navbar {
+    background: #0FB2E2;
+    margin-bottom: 0;
+    border-radius: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+  }
+
+header .navbar-default {
+    border: none;
+    border-radius: 0;
+    padding: 10px 0;
+}
+
+.navbar-inverse {
+    border: 0;
+}
+
+header .navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+header .navbar-inverse .navbar-brand {
+    color: white;
+}
+
+header .navbar-inverse .navbar-nav>li>a {
+    color: white;
+} 
+
+header .navbar-inverse .navbar-nav>li>a:hover {
+    background-color: rgb(68, 124, 170) ;
+}
+
+.active {
+    background-color:#C6B458 !important;
+}
+  
+
+
+my-email::after {
+    content: attr(data-domain);
+}
+
+my-email::before {
+    content: attr(data-user) "\0040";
+}
+ 
+.contact-icon {
+    width: 25px;
+    margin-right: 5px;
+    background-color: white;
+}
+
+.centered{
+    margin: 0 auto;
+}
