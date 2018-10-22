@@ -16,7 +16,6 @@ router.get('/:date', function (req,res){
     
     if (typeof req.query.page != 'undefined' && (Number(req.query.page)-1)*size < pics.length-1) {
         page = Number(req.query.page);
-        console.log('page #:', page);
         startIndex = (page-1)*size;
         endIndex = (page-1)*size+size-1 < pics.length-1 ? (page-1)*size+size-1 : pics.length-1;
     }

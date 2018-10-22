@@ -9,45 +9,20 @@
 
     <% include partials/header.ejs %>
 
-    <br>
-    <div class="container">
-        <div class="centered text-center">
-            <h1><%=date%></h1>
-            <% if (previous) {%>
-                <a href="/<%=date%>?page=<%=Number(page)-1%>">Previous Page <%=Number(page)-1 %></a>
-            <% } %>
-            <div>(Page <%=page%> of <%=totalPages%>)</div>
-            <% if (next) { %>
-                <a href="/<%=date%>?page=<%=Number(page)+1%>">Next Page <%=Number(page)+1 %></a>
-            <% } %>
-        </div>
-    </div>
-    <br>
+    <% include partials/pagenav.ejs %>
 
     <div class="container">
         <% pics.forEach( pic => { %>
             <div class='panel panel-default'>
                 <img src="<%=pic%>" alt="" class="img-responsive">
-                <% let repl = '/images/' + date + '/' %>
-                <% let name = pic.replace(repl,'') %>
+                <% let stripText = '/images/' + date + '/' %>
+                <% let name = pic.replace(stripText,'') %>
                 <h3><%=name%></h3>
             </div>
         <% }) %>
     </div>
 
-    <br>
-    <div class="container">
-        <div class="centered text-center">
-            <% if (previous) {%>
-                <a href="/<%=date%>?page=<%=Number(page)-1%>">Previous Page <%=Number(page)-1 %></a>
-            <% } %>
-            <div>(Page <%=page%> of <%=totalPages%>)</div>
-            <% if (next) { %>
-                <a href="/<%=date%>?page=<%=Number(page)+1%>">Next Page <%=Number(page)+1 %></a>
-            <% } %>
-        </div>
-    </div>
-    <br>
+    <% include partials/pagenav.ejs %>
 
     <% include partials/footer.ejs %>
 

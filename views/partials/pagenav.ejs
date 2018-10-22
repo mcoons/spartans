@@ -1,0 +1,25 @@
+<br>
+<div class="container">
+    <div class="centered text-center">
+        <h1><%=date%></h1>
+        <p>(Page <%=page%> of <%=totalPages%>)</p>
+        <% if (previous) {%>
+            <p>
+                <a href="/<%=date%>?page=<%=Number(page)-1%>">Previous Page <%=Number(page)-1 %></a>
+            </p>
+        <% } %>
+
+        <p>
+        <% for (let p=1; p <= totalPages; p++) { %>
+            <a href="/<%=date%>?page=<%=p%>"><%=p %></a>
+        <% } %>
+        </p>     
+
+        <% if (next) { %>
+            <p>
+                <a href="/<%=date%>?page=<%=Number(page)+1%>">Next Page <%=Number(page)+1 %></a>
+            </p>
+        <% } %>
+    </div>
+</div>
+<br>

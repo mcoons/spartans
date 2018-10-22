@@ -22,7 +22,7 @@ app.use(require('./routes/contact'));
 app.use(require('./routes/pictures'));
 
 dates = fs.readdirSync(picsFolder);
-if (dates[0] = "DS_Store") dates.shift();
+if (dates[0] = ".DS_Store") dates.shift();
 
 app.set('dates', dates);
 
