@@ -33,10 +33,12 @@ dates.forEach( date => {
 
         files.forEach( file => {
             if (file != '.DS_Store' && file != 'gameinfo.JSON') {
+                file = file.toLowerCase();
                 gameData.push(DOMpath+'/'+date + '/' + file);
             }
         })
-        gamePics[date] =gameData;
+        gameData.sort();
+        gamePics[date] = gameData;
     }
 })
 
